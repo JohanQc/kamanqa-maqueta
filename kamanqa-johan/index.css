@@ -1,0 +1,140 @@
+body {
+	margin: 0;
+	/* Solucion del position fixed con CSS*/
+	padding-top: 118px;
+}
+
+* {
+	font-family: 'Lato', sans-serif;
+}
+
+/* Para un futuro responsive */
+
+.container {
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+/* START - HEADER */
+.header {
+	position: fixed;
+	top: 0;
+  left: 0;
+	right: 0;
+}
+ 
+.bg-green {
+	background-color: cadetblue;
+}
+
+.header__content {
+	padding-right: 10px;
+
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 0;
+}
+
+.navigation__list {
+	list-style: none;
+	display: flex;
+	margin: 0;
+}
+
+.navigation__item {
+	padding-right: 30px;
+}
+
+.header-img {
+	border-radius: 50%;
+	width: 58px;
+	height: 58px;
+}
+
+.navigation__link {
+	text-decoration: none;
+	color: white;
+}
+
+.navigation__link:hover {
+	color: black;
+}
+
+/* END - HEADER */
+
+/* START - BANNER */
+
+.banner {
+	background-image: url("https://kamanqa.pe/wp-content/uploads/2017/12/0.-Portadav2.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 95vh;
+
+	/* Flexbox */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.banner__title, .banner__subtitle {
+	color: #FFFFFF;
+	margin: 0;
+}
+
+.banner__title {
+	font-size: 30px;
+}
+
+.banner__subtitle {
+
+	font-size: 70px;
+	font-weight: 700;
+}
+
+/* END - BANNER */
+/* START - SECTION QUIENES SOMOS */
+.section {
+	display: flex;
+	height: 400px;
+}
+.section__bg-work {
+	background-image: url(https://kamanqa.pe/wp-content/uploads/2018/09/Kamanqa_02.jpg);
+	background-size: cover;
+}
+.section__part-left {
+	padding-left: 202px;
+	padding-right: 50px;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	justify-content: center;
+
+}
+.section__part-right {
+	padding-right: 202px;
+	padding-left: 50px;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	justify-content: center;
+
+}
+.section__icon {
+	width: 80px;
+	height: 80pxs;
+}
+.section__text {
+	font-weight: 300;
+}
+.section__title {
+	color: #50646e;
+}
+.section__text-bold  {
+	color: #1e6987;
+	font-weight: bold;
+}
+.section__text-bold2 {
+	color: #50646e;
+	font-weight: bold;
+}
